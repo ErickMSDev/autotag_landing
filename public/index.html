@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 	<meta name="author" content="randomdev.net" />
 	<meta name="description" content="ViaSimple - Sistema de Análisis de Autopistas" />
 	<meta name="keywords" content="ViaSimple,Via Simple,Análisis de Autopistas" />
@@ -45,7 +45,7 @@
 				<div class="intro__content">
 					<div class="intro__title">Gestión y análisis de autopistas <br /><span>de manera inteligente</span>
 					</div>
-					<div class="intro__description">¿Realmente conocen lo que <span>gastas</span> en autopistas?</div>
+					<div class="intro__description">¿Realmente conoces lo que <span>gastas</span> en autopistas?</div>
 					<div class="intro__buttons intro__buttons--centered">
 						<a href="https://app.viasimple.cl/register" class="btn btn--red-bg">PRUEBA GRATIS</a>
 						<a href="#features" class="btn btn--green-border">¿QUÉ ES LO QUE HACE?</a>
@@ -389,7 +389,7 @@
 					<h3 class="grid__title">Nuestro <span>equipo de soporte 24/7</span> está para ayudarte y asegurarse
 						de que nuestro sistema esté en funcionamiento.</h3>
 					<p class="grid__text">Nos encantaría saber de tí. Escribenos o mandanos un audio al whatsapp:</p>
-					<a href="https://api.whatsapp.com/send?phone=19292381137" target="_blank" class="grid__more">+1 929 2381137</a>
+					<a href="https://wa.me/19292381137" target="_blank" class="grid__more">+1 929 2381137</a>
 				</div>
 				<div class="grid__item grid__item--x3 grid__item--form">
 					<div class="grid__form form">
@@ -397,7 +397,7 @@
 							preserveAspectRatio="none">
 							<polygon fill="#33ffbd" points="0,0 100,0 0,100" />
 						</svg>
-						<form class="form__container" id="ContactForm" method="post" action="index.html">
+						<form class="form__container" id="ContactForm">
 
 							<div class="form__row">
 								<label class="form__label" for="namec">Nombre</label>
@@ -406,12 +406,12 @@
 							</div>
 							<div class="form__row">
 								<label class="form__label">Email</label>
-								<input name="emailc" class="form__input" type="text" />
+								<input name="emailc" id="emailc" class="form__input" type="text" />
 								<span class="form__row-border"></span>
 							</div>
 							<div class="form__row">
 								<label class="form__label">Mensaje</label>
-								<textarea name="message" class="form__textarea" rows="3" cols="3"></textarea>
+								<textarea name="message" id="message" class="form__textarea" rows="3" cols="3"></textarea>
 								<span class="form__row-border"></span>
 							</div>
 
@@ -435,14 +435,14 @@
 					<div class="grid__icon"><img src="images/icons/icons-64/support-64.png" alt="" title="" /></div>
 					<h3 class="grid__title">Ayuda y Soporte</h3>
 					<p class="grid__text">Tu problema es nuestra principal prioridad. Nuestro equipo de soporte 24/7 está aquí para ayudarte.</p>
-					<a href="#" class="grid__more">soporte@viasimple.cl</a>
+					<a href="mailto:soporte@viasimple.cl" class="grid__more">soporte@viasimple.cl</a>
 				</div>
 				<div class="grid__item grid__item--padding">
 					<div class="grid__icon"><img src="images/icons/icons-64/globe-64.png" alt="" title="" /></div>
 					<h3 class="grid__title">Medios de comunicación y Prensa</h3>
 					<p class="grid__text">Obtén nuestros recursos de medios y conozca a nuestra empresa.
 					</p>
-					<a href="#" class="grid__more">medios@viasimple.cl</a>
+					<a href="mailto:medios@viasimple.cl" class="grid__more">medios@viasimple.cl</a>
 				</div>
 				<div class="grid__item grid__item--padding">
 					<div class="grid__icon"><img src="images/icons/icons-64/wallet-64.png" alt="" title="" /></div>
@@ -450,7 +450,7 @@
 					<p class="grid__text">¿Tienes una pregunta sobre nuestro sistema y características?
 						Nos encantaría saber cuál es tu preocupación.
 					</p>
-					<a href="#" class="grid__more">ventas@viasimple.cl</a>
+					<a href="mailto:ventas@viasimple.cl" class="grid__more">ventas@viasimple.cl</a>
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -526,109 +526,6 @@
 		</svg> -->
 	</footer>
 
-
-	<section class="modal modal--signuplogin">
-		<div class="modal__overlay modal__overlay--toggle"></div>
-		<div class="modal__wrapper modal-transition">
-
-			<div class="modal__body">
-
-				<div class="modal__content modal__content--login">
-					<div class="modal__info">
-						<h2 class="modal__title">First time here?</h2>
-						<div class="modal__descr">Join now and get <span>20% OFF</span> for all products</div>
-						<ul class="modal__list">
-							<li>premium access to all products</li>
-							<li>free testing tools</li>
-							<li>unlimited user accounts</li>
-						</ul>
-						<button class="modal__switch modal__switch--signup" data-popup="signup">Signup</button>
-					</div>
-					<div class="modal__form form">
-						<h2 class="form__title">Login</h2>
-						<form class="form__container" id="LoginForm" method="post" action="index.html">
-
-							<div class="form__row">
-								<label class="form__label" for="namec">Name</label>
-								<input name="namec" id="namec" class="form__input" type="text" />
-								<span class="form__row-border"></span>
-							</div>
-							<div class="form__row">
-								<label class="form__label">Email</label>
-								<input name="emailc" class="form__input" type="text" />
-								<span class="form__row-border"></span>
-							</div>
-
-							<div class="modal__checkbox"><input id="remember" name="remember" value="remember" checked
-									type="checkbox"><label for="remember">Keep me Signed in</label></div>
-							<div class="modal__switch modal__switch--forgot" data-popup="forgot">Forgot Password?</div>
-							<input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitl"
-								value="LOGIN" />
-						</form>
-					</div>
-				</div> <!-- End Modal login -->
-
-				<div class="modal__content modal__content--forgot">
-					<div class="modal__form form">
-						<h2 class="form__title">Forgot Password</h2>
-						<form class="form__container" id="ForgotForm" method="post" action="index.html">
-							<div class="form__row">
-								<label class="form__label">Email</label>
-								<input name="emailf" class="form__input" type="text" />
-								<span class="form__row-border"></span>
-							</div>
-							<input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitf"
-								value="RESET PASSWORD" />
-						</form>
-					</div>
-					<div class="modal__info">
-						<h2 class="modal__title">We got you covered</h2>
-						<div class="modal__descr">A new password will be sent by email. Remembered your password?</div>
-						<button class="modal__switch modal__switch--signup" data-popup="login">Login</button>
-					</div>
-				</div> <!-- End Modal login -->
-
-
-				<div class="modal__content modal__content--signup">
-					<div class="modal__form form">
-						<h2 class="form__title">Signup</h2>
-						<form class="form__container" id="SignupForm" method="post" action="index.html">
-							<div class="form__row">
-								<label class="form__label" for="names">Username</label>
-								<input name="namec" id="names" class="form__input" type="text" />
-								<span class="form__row-border"></span>
-							</div>
-							<div class="form__row">
-								<label class="form__label">Email</label>
-								<input name="emails" class="form__input" type="text" />
-								<span class="form__row-border"></span>
-							</div>
-							<div class="form__row">
-								<label class="form__label" for="pass">Password</label>
-								<input name="pass" id="pass" class="form__input" type="password" />
-								<span class="form__row-border"></span>
-							</div>
-							<input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submit"
-								value="SIGNUP" />
-						</form>
-					</div>
-					<div class="modal__info">
-						<h2 class="modal__title">Allready have an account?</h2>
-						<div class="modal__descr">Login now and starting using our <span>amazing</span> products</div>
-						<ul class="modal__list">
-							<li>premium access to all products</li>
-							<li>free testing tools</li>
-							<li>unlimited user accounts</li>
-						</ul>
-						<button class="modal__switch modal__switch--login" data-popup="login">Login</button>
-					</div>
-				</div> <!-- End Modal signup -->
-
-			</div>
-
-		</div>
-	</section> <!-- Modal for Login and Signup -->
-
 	<section class="modal modal--animation">
 		<div class="modal__overlay modal__overlay--toggle"></div>
 		<div class="modal__wrapper modal__wrapper--image modal-transition">
@@ -647,6 +544,7 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.custom.js"></script>
 	<script src="js/menu.js"></script>
+	<script src="js/whatsapp.js"></script>
 </body>
 
 </html>

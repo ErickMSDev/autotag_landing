@@ -56,7 +56,11 @@ $(document).ready(function () {
 	var scrollPos = $(document).scrollTop();
 	$('.header__menu ul li a').each(function () {
 		var currLink = $(this);
-	   var refElement = $(currLink.attr("href"));
+		var href = currLink.attr("href");
+		if(href.includes('http')) {
+			return;
+		}
+	   	var refElement = $(href);
 		if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 			$('.header__menu ul li a').removeClass("selected");
 			currLink.addClass("active");
