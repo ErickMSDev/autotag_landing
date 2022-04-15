@@ -161,8 +161,8 @@ h6{
 	clear:both;
 }
 .header__logo-title{
-	color:#fff;
-	font-size:26px;
+	color:transparent;
+	font-size:60px;
 	letter-spacing:-1px;
 	position:relative;
 	float:left;
@@ -170,12 +170,15 @@ h6{
 	left:0;
 	transform: translateY(-50%);
 	z-index:999;
+	background: url('./images/logo-viasimple-white.svg') no-repeat;
+	/* width: 200px;
+	height: 100px; */
 }
 .header__logo-title span{
 	font-weight:700;
 }
 .menu-open .header__logo-title, .header--sticky .header__logo-title{
-color:#000;
+	background-image: url('./images/logo-viasimple.svg');
 }
 /* ELEMENT - header__menu */
 .header__menu {
@@ -2483,7 +2486,7 @@ overflow-y:scroll;
 background-color:#fff;
 }
 .header__logo-title{
-	font-size:20px;
+	font-size:50px;
 }
 .header__menu {
 width: 100%;
