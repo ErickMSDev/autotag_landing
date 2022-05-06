@@ -61,7 +61,7 @@ $(document).ready(function () {
 			return;
 		}
 	   	var refElement = $(href);
-		if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+		if (refElement.length > 0 && refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 			$('.header__menu ul li a').removeClass("selected");
 			currLink.addClass("active");
 		}
